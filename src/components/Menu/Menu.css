@@ -1,0 +1,23 @@
+#bgImage {
+    width: 66%;
+    margin-top: 1rem;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.TBD h1 {
+    text-align: center;
+}

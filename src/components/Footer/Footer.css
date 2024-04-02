@@ -1,0 +1,44 @@
+#footerLogo {
+    width: 155px;
+    height: 262px;
+    padding: 1rem 0;
+}
+
+.footerNav {
+    background-color: honeydew;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.footerNav nav {
+    display: flex;
+}
+
+.footerNav nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNav nav ul h3 {
+    font-weight: bold;
+}
+
+.footerNav nav ul a {
+    color: black;
+    font-weight: lighter;
+    margin-bottom: 0.75rem;
+    text-decoration: none;
+}
+
+@media (min-width: 991px) {
+    .footerNav nav ul {
+        padding-left: 7rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .footerNav {
+        padding: 0 0.5rem;
+    }
+}

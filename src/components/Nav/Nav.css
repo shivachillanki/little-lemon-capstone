@@ -1,0 +1,135 @@
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navLogo {
+    width: 255px;
+    height: 70px;
+    margin-top: 0.2rem;
+}
+
+.navBar ul {
+    display: flex;
+}
+
+.navBar ul li {
+    list-style: none;
+}
+
+.navBar ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.navBar ul li a:not(.active):hover {
+    background-color: #F4CE14;
+    color: white;
+    box-shadow:
+            0 1px 1px hsl(0deg 0% 0% / 0.075),
+            0 2px 2px hsl(0deg 0% 0% / 0.075),
+            0 4px 4px hsl(0deg 0% 0% / 0.075),
+            0 8px 8px hsl(0deg 0% 0% / 0.075),
+            0 16px 16px hsl(0deg 0% 0% / 0.075);
+    transition: 0.5s ease;
+}
+
+.navBar ul li a.active {
+    background-color: #F4CE14;
+    color: white;
+}
+
+@media (min-width: 991px) {
+    #navLogo {
+        padding-right: 5rem;
+    }
+
+    .navBar ul {
+        padding-left: 5rem;
+    }
+}
+
+/* style Order Online button */
+
+@media (min-width: 900px) {
+    #navOrder {
+        background-color: #495E57;
+        color: white;
+    }
+
+    #navOrder:hover {
+        background-color: #F4CE14;
+        color: black;
+    }
+
+    #navOrder.active {
+        background-color: #F4CE14;
+        color: white;
+    }
+}
+
+/* mobile styling */
+
+.navBar .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+.navBar .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: black;
+    border-radius: 0.2rem;
+}
+
+.navBar .menu:hover {
+    background-color: #e5e5e5;
+    box-shadow:
+            0 1px 1px hsl(0deg 0% 0% / 0.075),
+            0 2px 2px hsl(0deg 0% 0% / 0.075),
+            0 4px 4px hsl(0deg 0% 0% / 0.075),
+            0 8px 8px hsl(0deg 0% 0% / 0.075),
+            0 16px 16px hsl(0deg 0% 0% / 0.075);
+    transition: 0.5s ease;
+}
+
+@media (max-width: 900px) {
+    .navBar .menu {
+        display: flex;
+    }
+
+    .navBar {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .navBar ul {
+        display: none;
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .navBar ul.open {
+        display: flex;
+    }
+
+    .navBar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navBar ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+}
