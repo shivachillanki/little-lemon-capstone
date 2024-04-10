@@ -9,7 +9,9 @@ const Footer = () => {
     return (
         <div className='footerNav'>
 
-            <img src={images.footerLogo} alt='logo' id='footerLogo'/>
+            <div>
+                <img src={images.footerLogo} alt='logo' id='footerLogo'/>
+            </div>
 
             <nav>
                 <ul>
@@ -39,4 +41,4 @@ const Footer = () => {
     );
 }
 
-export default Footer;
+export default Footer

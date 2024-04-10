@@ -5,7 +5,7 @@
 }
 
 .footerNav {
-    background-color: honeydew;
+    /* background-color: honeydew; */
     display: flex;
     justify-content: center;
     padding-top: 1rem;
@@ -22,11 +22,13 @@
 
 .footerNav nav ul h3 {
     font-weight: bold;
+    font-family: 'Karla', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .footerNav nav ul a {
     color: black;
     font-weight: lighter;
+    font-family: 'Karla', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 0.75rem;
     text-decoration: none;
 }
@@ -37,8 +39,34 @@
     }
 }
 
-@media (max-width: 767px) {
+/* Mobile Styling */
+
+@media (max-width: 500px) {
     .footerNav {
-        padding: 0 0.5rem;
+        flex-direction: column;
+    }
+
+    .footerNav div {
+        margin: auto;
+    }
+
+    .footerNav nav {
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    .footerNav nav ul {
+        padding-right: 2.5rem;
+    }
+}
+
+/* Larger Monitor Styling */
+
+@media (min-width: 1441px) {
+    .footerNav {
+        width: 66.7%;
+        margin: auto;
+        justify-content: space-between;
     }
 }

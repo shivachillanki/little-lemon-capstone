@@ -1,0 +1,142 @@
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBDABB;
+    text-align: center;
+    margin-top: 2rem;
+    height: 600px;
+}
+
+.testimonialsHeader {
+    text-align: center;
+    margin: 4rem 0 2rem 0;
+}
+
+.testimonialsHeader h4 {
+    font-family: 'Markazi Text', 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: normal;
+    color: #5E5D5D;
+}
+
+/* Styling for cards */
+
+.testimonials-cards {
+    display: flex;
+    width: 66.7%;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 1rem;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.testimonials-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-card {
+    width: 215px;
+    height: 196px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+    display: grid;
+    grid-template-areas:
+    'stars stars'
+    'pic name'
+    'pic handle'
+    'comment comment'
+    'comment comment';
+}
+
+.tCard-stars {
+    display: flex;
+    margin-top: 0.75rem;
+    margin-left: 0.75rem;
+    gap: 0.5rem;
+    grid-area: stars;
+}
+
+.tProfilePic {
+    margin-top: 1rem;
+    margin-left: 0.75rem;
+    margin-right: 0.5rem;
+    width: 50px;
+    height: 50px;
+    grid-area: pic;
+}
+
+.tProfilePic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.tPatron-name {
+    margin-right: 5rem;
+    width: 80px;
+    text-align: start;
+    grid-area: name;
+}
+
+.tPatron-name h5 {
+    font-family: 'Karla', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.tPatron-handle {
+    margin-top: -3.1rem;
+    margin-right: 5rem;
+    width: 80px;
+    text-align: start;
+    grid-area: handle;
+}
+
+.tPatron-handle h6 {
+    font-family: 'Karla', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    margin-bottom: 0.75rem;
+}
+
+.tPatron-comment {
+    width: 174px;
+    height: 45px;
+    text-align: start;
+    margin-left: 0.75rem;
+    grid-area: comment;
+}
+
+.tPatron-comment p {
+    font-family: 'Karla', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    line-height: 15px;
+}
+
+@media (max-width: 991px) {
+    .testimonials-cards {
+        flex-direction: column;
+        width: max-content;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .testimonials-container {
+        height: 1500px;
+    }
+}
+
+@media (max-width: 1439px) {
+    .testimonials-cards {
+        gap: 3rem;
+    }
+}

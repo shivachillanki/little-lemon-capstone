@@ -2,6 +2,7 @@ import './Nav.css'
 import React, { useState } from "react"
 import { images } from '../../constants'
 import { Link, NavLink } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 // update "About" NavLink to HashLink
 
@@ -12,9 +13,11 @@ const Nav = () => {
     return (
 
         <nav className='navBar'>
+            <div className='navLogo' >
+                <Link to={'/LittleLemon'} ><img src={images.logo} alt='logo' id='navLogo' /></Link>
+            </div>
 
-            <Link to={'/LittleLemon'} ><img src={images.logo} alt='logo' id='navLogo' /></Link>
-
+            {/* Hamburger Menu Icon */}
             <div className='menu' onClick={() => {
                 setMenuOpen(!menuOpen);
             }}>
@@ -28,7 +31,12 @@ const Nav = () => {
                     <NavLink to={'/'} >Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to={'/LittleLemon'} >About</NavLink>
+                    <HashLink
+                        to = {'/#aboutSection'}
+                        scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'end' })}
+                    >
+                        About
+                    </HashLink>
                 </li>
                 <li>
                     <NavLink to={'/menu'} >Menu</NavLink>
@@ -45,7 +53,7 @@ const Nav = () => {
             </ul>
 
         </nav>
-    );
+    )
 }
 
-export default Nav;
+export default Nav

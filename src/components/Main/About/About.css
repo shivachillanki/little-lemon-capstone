@@ -1,0 +1,96 @@
+.aboutSection-container {
+    display: flex;
+    width: 66.7%;
+    margin: auto;
+    position: relative;
+    justify-content: space-between;
+}
+
+.aboutSection-title h1 {
+    font-family: 'Markazi Text', 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 64px;
+    color: #F4CE14;
+}
+
+.aboutSection-subTitle {
+    margin-top: -3rem;
+}
+
+.aboutSection-subTitle h2 {
+    font-family: 'Markazi Text', 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.aboutSection-about {
+    width: 87%;
+    margin-top: 4rem;
+}
+
+.aboutSection-about p {
+    font-family: 'Karla', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.aboutSection-images img {
+    width: 272px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.aboutSection-image1 {
+    position: relative;
+    top: 30%;
+    right: 15%;
+}
+
+.aboutSection-image2 {
+    position: absolute;
+    top: 10%;
+    right: 0;
+}
+
+.aboutSection-divider {
+    width: 66%;
+    margin: auto;
+    color: #5E5D5D;
+    margin-top: 5rem;
+}
+
+/* Resizing for larger monitors */
+@media (min-width: 1441px) {
+    .aboutSection-about {
+        width: 40%;
+    }
+}
+
+/* mobile styling */
+
+@media (max-width: 991px) {
+    .aboutSection-container {
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .aboutSection-about {
+        width: auto;
+    }
+
+    .aboutSection-images {
+        display: none;
+    }
+
+    .aboutSection-divider {
+        width: auto;
+        margin: 1rem;
+    }
+}

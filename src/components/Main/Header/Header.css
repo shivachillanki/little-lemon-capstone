@@ -1,0 +1,110 @@
+.heroSection-bg {
+    background-color: #495E57;
+}
+
+.heroSection {
+    width: 66.7%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .heroDetails {
+    border: red solid;
+} */
+
+.heroTitle h1 {
+    color: #F4CE14;
+    font-family: 'Markazi Text', 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 64px;
+}
+
+.heroSubTitle {
+    margin-top: -3rem;
+}
+
+.heroSubTitle h2 {
+    color: white;
+    font-family: 'Markazi Text', 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.heroDescription {
+    width: 70%;
+    margin-top: 3rem;
+}
+
+.heroDescription p {
+    color: white;
+    font-family: 'Karla', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.reserveBttn {
+    width: max-content;
+    background-color: #F4CE14;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+    transition: 0.5s ease;
+}
+
+.reserveBttn:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.reserveBttn a {
+    font-family: 'Karla', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.hero-image img {
+    width: 400px;
+    height: 500px;
+    border-radius: 16px;
+    margin-top: 1rem;
+    margin-bottom: -3rem;
+}
+
+@media (min-width: 1441px) {
+    .heroDescription {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-image img {
+        margin-top: 12rem;
+    }
+}
+
+/* Mobile Styling */
+
+@media (max-width: 991px) {
+    .heroSection {
+        width: auto;
+        margin-left: 1rem;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .reserveBttn {
+        margin-bottom: 3rem;
+    }
+}

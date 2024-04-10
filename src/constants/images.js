@@ -12,6 +12,8 @@ import PP3 from '../assets/ProfilePic3.jpeg'
 import PP4 from '../assets/ProfilePic4.jpeg'
 import ownersA from '../assets/MarioandAdrianA.jpg'
 import ownersB from '../assets/MarioandAdrianb.jpg'
+import chicago from '../assets/chicago.png'
 import ReservationHero from '../assets/ReservationHeroBG.png'
 
-export default {logo, bgImage, progress, footerLogo, heroImage, dish1, dish2, dish3, PP1, PP2, PP3, PP4, ownersA, ownersB, ReservationHero}
+// eslint-disable-next-line
+export default {logo, bgImage, progress, footerLogo, heroImage, dish1, dish2, dish3, PP1, PP2, PP3, PP4, ownersA, ownersB, ReservationHero, chicago}

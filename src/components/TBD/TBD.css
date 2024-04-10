@@ -1,6 +1,5 @@
 #bgImage {
     width: 66%;
-    margin-top: 1rem;
 }
 
 .container {
@@ -16,15 +15,4 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.TBD h1 {
-    text-align: center;
-}
-
-@media (min-width: 991px) {
-    .tEsting {
-        text-align: center;
-        margin: 0 16%;
-    }
 }

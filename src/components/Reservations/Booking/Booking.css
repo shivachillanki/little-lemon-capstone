@@ -1,0 +1,195 @@
+.rsvForm-container {
+    display: flex;
+    flex-direction: column;
+    width: 66.7%;
+    margin: auto;
+}
+
+.rsvForm-header h2 {
+    font-family: 'Markazi Text', 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.rsvForm-row1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+}
+
+.rsvForm-row2 {
+    display: flex;
+    width: 66.7%;
+    margin: auto;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 7rem;
+}
+
+.rsvForm-row3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.rsvForm-container label {
+    font-family: 'Karla', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.optionalInput {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+/* Select */
+
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 215px;
+    height: 40px;
+}
+
+.select-container select, input {
+    border-radius: 8px;
+    appearance: none;
+    padding: 0 30px 0 25px;
+    width: 100%;
+    color: #495E57;
+    background-color: #EDEFEE;
+    font-size: 16px;
+}
+
+.select-container .icon-container {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-container .res-selectIcon-container {
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container .resIcon {
+    font-size: 20px;
+}
+
+.res-selectIcon-container .res-selectIcon {
+    font-size: 10px;
+}
+
+/* selected option styling */
+
+
+
+/* Date */
+
+
+/* Comment */
+
+.commentField {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentField textarea {
+    width: 450px;
+    height: 180px;
+    background-color: #EDEFEE;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/* Submit Button */
+
+.rsvSubmit-bttn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.rsvSubmit-bttn button {
+    font-family: 'Karla', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    width: 215px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #F4CE14;
+    color: black;
+}
+
+.rsvSubmit-bttn button:disabled {
+    background-color: #EDEFEE;
+}
+
+/* small screens */
+
+@media (max-width: 1024px) {
+    .rsvForm-container {
+        width: 80%;
+    }
+
+    .rsvForm-header {
+        width: 80%;
+    }
+
+    .rsvForm-row1 {
+        flex-direction: column;
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .rsvForm-row2 {
+        flex-direction: column;
+        width: 100%;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .rsvForm-container {
+        width: 90%;
+    }
+
+    .rsvForm-header {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .rsvForm-row3 {
+        width: 100%;
+    }
+
+    .commentField {
+        width: 100%;
+        margin-right: 0.75rem;
+    }
+
+    .commentField textarea {
+        width: 100%;
+    }
+}
